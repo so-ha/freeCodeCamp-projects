@@ -1,3 +1,4 @@
 # freeCodeCamp-projects
-Build a Tribute Page:
-  Link : https://codepen.io/freeCodeCamp/pen/MJjpwO
+https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/
+1. Build a Tribute Page
+2. Build a Survey form
