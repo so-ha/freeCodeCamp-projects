@@ -1,0 +1,77 @@
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://resize.hswstatic.com/w_1024/gif/computer-keyboard-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#main {
+	display: inline;;
+	justify-content: center;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	margin: 0px 25% 0px 25%;
+	color:white;
+}
+h1 {
+	font-size: 2.5em;
+}
+p{
+	font-size: 1em;
+}
+form {
+	margin: 0 25% 0px 25%;
+	padding-top:1%;
+	padding-left:2%;
+	padding-bottom: 1%; 
+	background-color:rgba(27, 27, 50, 0.8);
+	background-attachment: scroll;
+	color:white;
+	justify-content: left;
+	line-height: 200%;
+	text-align: left;
+}
+select {
+	font-family: 'Poppins',sans-serif;
+	box-sizing: border-box;
+	padding-left: 5px;
+	border-radius: 5px;
+	min-width: 86.5%;
+}
+#submit {
+	background-color: #37af65;
+	color: white;
+}
+input {
+	font-family: 'Poppins',sans-serif;
+	border-radius: 5px;
+}
+input::before {
+	box-sizing: border-box;
+}
+textarea{
+	border-radius: 5px;
+	min-width: 85%;
+	max-width: 95%;
+}
+#name, #email, #number {
+	min-width: 85%;
+}
+label{
+	font-size:1em;
+}
+#submit {
+	min-width: 91%;
+}
+.radio{
+	padding-left: 0px;
+	min-width: 0%;
+	margin-left: 0px;
+}
