@@ -1,0 +1,42 @@
+body{
+	font-family: 'Crimson Text', serif;
+}
+h1 {
+	font-size:1.4em;
+	font-weight: bold;
+}
+p {
+	font-size: 1em;
+}
+ul {
+	font-size: 1em;
+}
+a {
+	font-family:'Crimson Text', serif; 
+	color: black;
+}
+#v-pills-tab {
+	border-right-style: solid;
+	border-right-width: 2px;
+	border-right-color: black;
+	position: fixed;
+	top:0px;
+	min-width: 20%;
+}
+#v-pills-tab a{
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 0px;
+}
+#v-pills-tab h1{
+	padding-left: 10px;
+}
+a.active.nav-link{
+	background-color: #909090!important;
+}
+@media (max-width: 750px) {
+	#v-pills-tab {
+		min-width: 5%;
+	}
+}
