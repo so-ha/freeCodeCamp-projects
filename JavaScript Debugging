@@ -1,0 +1,42 @@
+1. You can use typeof to check the data structure, or type, of a variable. This is useful in debugging when working with multiple data types. 
+If you think you're adding two numbers, but one is actually a string, the results can be unexpected.
+Type errors can lurk in calculations or function calls. 
+Be careful especially when you're accessing and working with external data in the form of a JavaScript Object Notation (JSON) object.
+
+Here are some examples using typeof:
+
+console.log(typeof ""); // outputs "string"
+console.log(typeof 0); // outputs "number"
+console.log(typeof []); // outputs "object"
+console.log(typeof {}); // outputs "object"
+JavaScript recognizes six primitive (immutable) data types: Boolean, Null, Undefined, Number, String, and Symbol (new with ES6) and one type for mutable items: Object. 
+Note that in JavaScript, arrays are technically a type of object.
+
+2. The code below assigns x to be 2, which evaluates as true. Almost every value on its own in JavaScript evaluates to true, except what are known as the "falsy" values: false, 0, "" (an empty string), NaN, undefined, and null.
+
+let x = 1;
+let y = 2;
+if (x = y) {
+  // this code block will run for any value of y (unless y were originally set as a falsy)
+} else {
+  // this code block is what should run (but won't) in this example
+}
+
+3. Off by one errors (sometimes called OBOE) crop up when you're trying to target a specific index of a string or array (to slice or access a segment), or when looping over the indices of them. JavaScript indexing starts at zero, not one, which means the last index is always one less than the length of the item. If you try to access an index equal to the length, the program may throw an "index out of range" reference error or print undefined.
+
+When you use string or array methods that take index ranges as arguments, it helps to read the documentation and understand if they are inclusive (the item at the given index is part of what's returned) or not. Here are some examples of off by one errors:
+
+let alphabet = "abcdefghijklmnopqrstuvwxyz";
+let len = alphabet.length;
+for (let i = 0; i <= len; i++) {
+  // loops one too many times at the end
+  console.log(alphabet[i]);
+}
+for (let j = 1; j < len; j++) {
+  // loops one too few times and misses the first character at index 0
+  console.log(alphabet[j]);
+}
+for (let k = 0; k < len; k++) {
+  // Goldilocks approves - this is just right
+  console.log(alphabet[k]);
+}

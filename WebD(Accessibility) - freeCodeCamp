@@ -1,0 +1,22 @@
+1.  An article is for standalone content, and a section is for grouping thematically related content. 
+They can be used within each other, as needed. 
+For example, if a book is the article, then each chapter is a section
+<div> - groups content
+<section> - groups related content
+<article> - groups independent, self-contained content
+
+2. The audio tag supports the controls attribute. 
+This shows the browser default play, pause, and other controls, and supports keyboard functionality. 
+This is a boolean attribute, meaning it doesn't need a value, its presence on the tag turns the setting on.
+<audio id="meowClip" controls>
+  <source src="audio/meow.mp3" type="audio/mpeg" />
+</audio>
+
+3. HTML5 also introduced the time element along with a datetime attribute to standardize times. 
+This is an inline element that can wrap a date or time on a page. 
+A valid format of that date is held by the datetime attribute. 
+This is the value accessed by assistive devices. 
+It helps avoid confusion by stating a standardized version of a time, even if it's written in an informal or colloquial manner in the text.
+
+4. The tabindex attribute also specifies the exact tab order of elements. 
+This is achieved when the value of the attribute is set to a positive number of 1 or higher.

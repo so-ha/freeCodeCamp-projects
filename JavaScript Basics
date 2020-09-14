@@ -1,0 +1,46 @@
+1. JavaScript provides eight different data types which are 
+- undefined, 
+- null, 
+- boolean, 
+- string, 
+- symbol, 
+- bigint, 
+- number, 
+- and object.
+
+2. When JavaScript variables are declared, they have an initial value of undefined. 
+If you do a mathematical operation on an undefined variable your result will be NaN which means "Not a Number". 
+If you concatenate a string with an undefined variable, you will get a literal string of "undefined".
+
+3. In JavaScript all variables and function names are case sensitive. This means that capitalization matters.
+
+4.  In JavaScript, String values are immutable, which means that they cannot be altered once created.
+This does not mean that myStr cannot be changed, just that the individual characters of a string literal cannot be changed. 
+The only way to change myStr would be to assign it with a new string.
+
+5. arr1.push(4);
+var a = arr1.pop(); //to "pop" a value off of the end of an array
+var a = arr1.shift(); //to remove a value off of the start of an array
+arr1.unshift(); //.unshift() works exactly like .push(), but instead of adding the element at the end of the array, unshift() adds the element at the beginning of the array.
+
+6. The purpose of "use strict" is to indicate that the code should be executed in "strict mode".
+With strict mode, you can not, for example, use undeclared variables.
+
+7. Strict equality (===) is the counterpart to the equality operator (==). 
+However, unlike the equality operator, which attempts to convert both values being compared to a common type, the strict equality operator does not perform a type conversion.
+
+If the values being compared have different types, they are considered unequal, and the strict equality operator will return false.
+
+8. The second way to access the properties of an object is bracket notation ([]). 
+If the property of the object you are trying to access has a space in its name, you will need to use bracket notation.
+var myObj = {
+  "Space Name": "Kirk",
+  "More Space": "Spock",
+  "NoSpace": "USS Enterprise"
+};
+myObj["Space Name"]; // Kirk
+myObj['More Space']; // Spock
+myObj["NoSpace"];    // USS Enterprise
+
+9. To search for a property in an array of objects
+if(prop in contacts[i])

@@ -1,0 +1,8 @@
+1. Responsive Web Design is an approach to designing web content that responds to the constraints of different devices.
+
+2. Media Queries are a new technique introduced in CSS3 that change the presentation of content based on different viewport sizes. 
+Media Queries consist of a media type, and if that media type matches the type of device the document is displayed on, 
+the styles are applied. You can have as many selectors and styles inside your media query as you want.
+The viewport is a user's visible area of a web page, and is different depending on the device used to access the site.
+
+3. In CSS Grid, the parent element is referred to as the container and its children are called items.

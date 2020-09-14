@@ -1,0 +1,73 @@
+1. There are three main ways to apply CSS styling
+ - inline styles directly to HTML elements with the style attribute
+ - place CSS rules within style tags in an HTML document
+ - write CSS rules in an external style sheet, then reference that file in the HTML document
+ 	(improves the readability and reusability of your code)
+
+ 2. The idea behind CSS is that you can use a selector to target an HTML element in the DOM (Document Object Model) 
+ and then apply a variety of attributes to that element to change the way it is displayed on the page.
+
+3. id attributes should be unique. 
+Browsers won't enforce this, but it is a widely agreed upon best practice. 
+So please don't give more than one element the same id attribute.
+An id also has a higher specificity (importance) than a class 
+so if both are applied to the same element and have conflicting styles, 
+the styles of the id will be applied.
+
+4. An element's padding controls the amount of space between the element's content and its border.
+
+5.* you will use the [attr=value] attribute selector to style
+This selector matches and styles elements with a specific attribute value. 
+For example, the below code changes the margins of all elements with the attribute type and a corresponding value of radio:
+[type='radio'] {
+  margin: 20px 0px 20px 0px;
+}
+
+6.  The order of the class declarations in the <style> section is what is important. 
+The second declaration will always take precedence over the first.
+
+7. When you absolutely need to be sure that an element has specific CSS, you can use !important
+color: red !important;
+
+8. #000000 is black and is also the lowest possible value
+
+9. How to create a variable in CSS
+--penguin-skin:gray; (varible name = penguin-skin and value = "gray")
+background: var(--penguin-skin);
+
+10. When using your variable as a CSS property value, 
+you can attach a fallback value that your browser will revert to if the given variable is invalid.
+Note: This fallback is not used to increase browser compatibility, 
+and it will not work on IE browsers. 
+Rather, it is used so that the browser has a color to display if it cannot find your variable.
+
+11. :root is a pseudo-class selector that matches the root element of the document, 
+usually the html element. 
+By creating your variables in :root, they will be available globally and can be accessed from any other selector in the style sheet.
+
+12. CSS Variables can simplify the way you use media queries.
+
+For instance, when your screen is smaller or larger than your media query break point, 
+you can change the value of a variable, and it will apply its style wherever it is used.
+
+13.  A pseudo-class is a keyword that can be added to selectors, in order to select a specific state of the element.
+a:hover {
+  color: red;
+}
+
+14. CSS treats each HTML element as its own box, which is usually referred to as the CSS Box Model. 
+Block-level items automatically start on a new line (think headings, paragraphs, and divs) 
+while inline items sit within surrounding content (like images or spans). 
+
+15. relative, absolute and fixed positioning of html elements via css
+One key difference between the fixed and absolute positions is that 
+an element with a fixed position won't move when the user scrolls.
+
+16. When elements are positioned to overlap (i.e. using position: absolute | relative | fixed | sticky), 
+the element coming later in the HTML markup will, by default, appear on the top of the other elements. 
+However, the z-index property can specify the order of how elements are stacked on top of one another. 
+It must be an integer (i.e. a whole number and not a decimal), 
+and higher values for the z-index property of an element move it higher in the stack than those with lower values.
+
+17. ::before and ::after pseudo-elements are used to add something before or after a selected element.
+
